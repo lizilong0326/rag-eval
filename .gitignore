@@ -1,0 +1,21 @@
+# 密钥与本地配置（不提交）
+.env
+config.yaml
+
+# 运行产物
+out/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 测试缓存
+.pytest_cache/
+.mypy_cache/
+
+# 系统
+.DS_Store

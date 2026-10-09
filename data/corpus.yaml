@@ -1,0 +1,127 @@
+# 合成语料（演示用，全部为虚构内容，不包含真实客户信息）
+documents:
+  # ---- ent_hl 当前版本 v3（正常作答依据）----
+  - doc_id: D001
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车首保周期为5000公里或6个月，以先到为准。"
+    keywords: ["首保周期"]
+  - doc_id: D002
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车拖挂车型需持有C6驾照方可上路。"
+    keywords: ["拖挂车型", "驾照"]
+  - doc_id: D003
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车冬季排水步骤：关闭水泵，打开底部排水阀排空水箱。"
+    keywords: ["排水"]
+  - doc_id: D004
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车电池质保为8年或16万公里。"
+    keywords: ["电池质保"]
+  - doc_id: D005
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车标准胎压为前轮3.5bar、后轮4.0bar。"
+    keywords: ["胎压"]
+  - doc_id: D006
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车支持直流快充，充电口位于车身左侧。"
+    keywords: ["充电"]
+  - doc_id: D007
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车交强险为必买险种。"
+    keywords: ["险种", "交强险"]
+  - doc_id: D008
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车遮阳棚展开宽度为2.5米。"
+    keywords: ["遮阳棚"]
+  - doc_id: D009
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车户外灶具功率为3500W。"
+    keywords: ["灶具"]
+  - doc_id: D010
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车灰水箱容量为80L。"
+    keywords: ["灰水箱"]
+  - doc_id: D012
+    enterprise_id: ent_hl
+    version: v3
+    content: "示例房车轮胎规格为225/75R16。"
+    keywords: ["轮胎规格"]
+
+  # ---- ent_hl 过期版本（用于「过期政策」「冲突」场景）----
+  - doc_id: D101
+    enterprise_id: ent_hl
+    version: v2
+    content: "示例房车首保周期为3000公里或3个月。"
+    keywords: ["首保周期"]
+  - doc_id: D102
+    enterprise_id: ent_hl
+    version: v1
+    content: "示例房车首保周期为1000公里。"
+    keywords: ["首保周期"]
+  - doc_id: D103
+    enterprise_id: ent_hl
+    version: v2
+    content: "示例房车电池质保为5年。"
+    keywords: ["电池质保"]
+  - doc_id: D104
+    enterprise_id: ent_hl
+    version: v2
+    content: "示例房车发电机每运行500小时保养一次。"
+    keywords: ["发电机"]
+  - doc_id: D105
+    enterprise_id: ent_hl
+    version: v2
+    content: "示例房车太阳能板功率为200W。"
+    keywords: ["太阳能板"]
+  - doc_id: D106
+    enterprise_id: ent_hl
+    version: v1
+    content: "示例房车防冻液型号为G12。"
+    keywords: ["防冻液"]
+  - doc_id: D107
+    enterprise_id: ent_hl
+    version: v2
+    content: "示例房车拖挂车型需C1驾照。"
+    keywords: ["拖挂车型", "驾照"]
+
+  # ---- ent_xw（同行品牌，用于「跨企业引用」场景）----
+  - doc_id: D201
+    enterprise_id: ent_xw
+    version: v2
+    content: "同行品牌车型电池质保为3年。"
+    keywords: ["电池质保"]
+  - doc_id: D202
+    enterprise_id: ent_xw
+    version: v2
+    content: "同行品牌车型首保周期为6000公里。"
+    keywords: ["首保周期"]
+  - doc_id: D203
+    enterprise_id: ent_xw
+    version: v1
+    content: "同行品牌车型电池质保为2年。"
+    keywords: ["电池质保"]
+  - doc_id: D204
+    enterprise_id: ent_xw
+    version: v2
+    content: "同行品牌车型车内净水箱容量为90L。"
+    keywords: ["净水箱"]
+  - doc_id: D205
+    enterprise_id: ent_xw
+    version: v2
+    content: "同行品牌车型整车质保为3年。"
+    keywords: ["整车质保"]
+  - doc_id: D206
+    enterprise_id: ent_xw
+    version: v2
+    content: "同行品牌拖挂球头型号为B50。"
+    keywords: ["球头"]

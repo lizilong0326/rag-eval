@@ -1,0 +1,10 @@
+# 企业 / 版本数据模型（合成，非真实企业）
+enterprises:
+  - enterprise_id: ent_hl
+    version: v3
+    valid_from: v3
+    valid_to: v3
+  - enterprise_id: ent_xw
+    version: v2
+    valid_from: v2
+    valid_to: v2

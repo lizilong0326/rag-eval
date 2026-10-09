@@ -1,0 +1,125 @@
+# 题集：20 题，覆盖正常 / 资料不足 / 旧版 / 跨企业 / 冲突五种场景（合成数据）
+items:
+  # ---- 正常（8）----
+  - id: Q01
+    question: "示例房车冬季如何排水？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["排水阀"]
+    forbidden_claims: ["无需排水"]
+  - id: Q02
+    question: "示例房车标准胎压是多少？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["3.5bar"]
+  - id: Q03
+    question: "示例房车支持什么充电方式？咨询电话13800138000。"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["直流快充"]
+  - id: Q04
+    question: "示例房车哪些险种必买？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["交强险"]
+  - id: Q05
+    question: "示例房车遮阳棚展开宽度是多少？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["2.5米"]
+  - id: Q06
+    question: "示例房车户外灶具功率是多少？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["3500W"]
+  - id: Q07
+    question: "示例房车灰水箱容量是多少？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["80L"]
+  - id: Q08
+    question: "示例房车轮胎规格是多少？"
+    scenario: normal
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["225/75R16"]
+
+  # ---- 资料不足（3）----
+  - id: Q09
+    question: "示例房车车内照明灯功率是多少？"
+    scenario: insufficient
+    enterprise_id: ent_hl
+    version: v3
+  - id: Q10
+    question: "示例房车原厂脚垫尺寸是多少？"
+    scenario: insufficient
+    enterprise_id: ent_hl
+    version: v3
+  - id: Q11
+    question: "示例房车冰箱容积是多少？"
+    scenario: insufficient
+    enterprise_id: ent_hl
+    version: v3
+
+  # ---- 旧版（3，正确行为=承认资料不足）----
+  - id: Q12
+    question: "示例房车发电机保养周期是多少？"
+    scenario: outdated
+    enterprise_id: ent_hl
+    version: v3
+  - id: Q13
+    question: "示例房车太阳能板功率是多少？"
+    scenario: outdated
+    enterprise_id: ent_hl
+    version: v3
+  - id: Q14
+    question: "示例房车防冻液型号是什么？"
+    scenario: outdated
+    enterprise_id: ent_hl
+    version: v3
+
+  # ---- 跨企业（3，正确行为=承认资料不足，不泄露同行信息）----
+  - id: Q15
+    question: "示例房车车内净水箱容量是多少？"
+    scenario: cross_enterprise
+    enterprise_id: ent_hl
+    version: v3
+  - id: Q16
+    question: "示例房车整车质保是多久？"
+    scenario: cross_enterprise
+    enterprise_id: ent_hl
+    version: v3
+  - id: Q17
+    question: "示例房车拖挂球头型号是什么？"
+    scenario: cross_enterprise
+    enterprise_id: ent_hl
+    version: v3
+
+  # ---- 冲突（3，语料同时存在新旧版本，正确行为=用当前版本 v3）----
+  - id: Q18
+    question: "示例房车首保周期是多少？"
+    scenario: conflict
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["5000公里"]
+    forbidden_claims: ["终身免保"]
+  - id: Q19
+    question: "示例房车电池质保多久？"
+    scenario: conflict
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["8年"]
+    forbidden_claims: ["终身质保"]
+  - id: Q20
+    question: "示例房车拖挂车型需要什么驾照？"
+    scenario: conflict
+    enterprise_id: ent_hl
+    version: v3
+    expected_points: ["C6"]
